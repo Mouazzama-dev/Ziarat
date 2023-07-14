@@ -27,7 +27,7 @@ const Partnership: React.FC<PartnershipProps> = ({ img, title, description, butt
     }
 
     return (
-        <section id='partnership' className="col-span-2 rounded overflow-hidden border-2 flex flex-col items-center justify-center border-borderDark">
+        <section id='partnership' className="col-span-6 rounded overflow-hidden border-2 flex flex-col items-center justify-center border-borderDark">
             <div className="px-6">
                 <img className="w-[100px] object-contain" src={img} alt="feature img" />
             </div>

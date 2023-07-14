@@ -38,10 +38,9 @@ export const socialLinks = [
 
 
 export const features = [
-  { id: 'f1', img: dummyImg, title: 'Lorem Ipsum', description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.' },
-  { id: 'f2', img: dummyImg, title: 'Lorem Ipsum', description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.' },
-  { id: 'f3', img: dummyImg, title: 'Lorem Ipsum', description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.' },
-  { id: 'f4', img: dummyImg, title: 'Lorem Ipsum', description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.' },
+  { id: 'f1', img: dummyImg, title: 'Fast transactions', description: 'One of the prominent competitive advantage is fast transaction with high scalability' },
+  { id: 'f2', img: dummyImg, title: 'Low transaction fees', description: 'By merging zk-rollups with state channels, transaction fees are significantly reduced, offering users a cost-effective solution for conducting transactions.' },
+  { id: 'f3', img: dummyImg, title: 'High scalability', description: 'The combination of zk-rollups and state channels results in exceptional scalability, allowing for a significant increase in transaction processing capacity and accommodating a large number of transactions simultaneously.' },
 ];
 
 
