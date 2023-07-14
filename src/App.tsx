@@ -35,8 +35,8 @@ function App() {
           </div>
         </div>
 
-        <div className={`${styles.flexStart}`}>
-          <div className={`${styles.boxWidth} ${styles.paddingX} bg-footerColor/30`}>
+        <div className={`${styles.flexStart} lg:h-52`}>
+          <div className={`${styles.boxWidth} ${styles.paddingX} pt-3 bg-footerColor/30`}>
             <Footer />
           </div>
         </div>

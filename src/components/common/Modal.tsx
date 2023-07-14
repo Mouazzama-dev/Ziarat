@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import { Button, Card, CardFooter, Checkbox, Dialog, DialogBody, DialogHeader, Input, Textarea, Typography, } from '@material-tailwind/react'
 import { ModalProps } from '../../constants/constants'
+import { addDoc, collection } from 'firebase/firestore'
+import { db } from '../../config/firebase'
 
 
 
@@ -8,6 +10,7 @@ const ContactModal: React.FC<ModalProps> = ({ isOpen, handleOpen, heading, showC
     const [email, setEmail] = useState<string>('')
     const [message, setMessage] = useState<string>('')
 
+    const userCollectionRef = collection(db, 'userMessages')
 
 
     /* TODOs: 
@@ -15,13 +18,13 @@ const ContactModal: React.FC<ModalProps> = ({ isOpen, handleOpen, heading, showC
         - Loading stops Modal should display "Thankyou for Contact"
      */
 
-    // TODO: Function to store email & message to firebase
-    const handleNotify = () => {
-        const data = {
-            email,
-            message
+    const onSubmit = async () => {
+        try {
+            await addDoc(userCollectionRef, { email, message })
+
+        } catch (error) {
+            console.error(error)
         }
-        console.log('data', data)
     }
 
 
@@ -56,7 +59,7 @@ const ContactModal: React.FC<ModalProps> = ({ isOpen, handleOpen, heading, showC
 
                 </DialogBody>
                 <CardFooter className="pt-0">
-                    <Button variant={'filled'} color={'white'} size="lg" onClick={handleNotify} fullWidth>
+                    <Button variant={'filled'} color={'white'} size="lg" onClick={onSubmit} fullWidth>
                         {buttonText}
                     </Button>
                 </CardFooter>
