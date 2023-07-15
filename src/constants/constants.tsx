@@ -66,28 +66,28 @@ interface AccordionItem {
 export const faqData: AccordionItem[] = [
   {
     id: 1,
-    question: "What is Lorem Ipsum?",
-    answer: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    question: "What is Ziarat, and how does it differ from traditional blockchain solutions?",
+    answer: "Ziarat is a groundbreaking protocol that combines state channels and zk-rollups to enhance scalability, privacy, and reduce transaction costs compared to traditional blockchain solutions",
   },
   {
     id: 2,
-    question: "Why do we use it?",
-    answer: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+    question: "What are the privacy features of Ziarat?",
+    answer: "Ziarat incorporates zero-knowledge proofs from zk-rollups, ensuring transaction validity without revealing sensitive data, thereby safeguarding user confidentiality.",
   },
   {
     id: 3,
-    question: "Where does it come from?",
-    answer: "Contrary to popular belief, Lorem Ipsum is not simply random text.",
+    question: "Will Ziarat have a token?",
+    answer: "We are actively working on the tokenomics of Ziarat, to drive the platform's economy and ensure early builders are supported.",
   },
   {
     id: 4,
-    question: "Where can I get some?",
-    answer: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.",
+    question: "Can Ziarat be used for a variety of applications?",
+    answer: "Yes, Ziarat's flexible design caters to diverse use cases, from frequent and fast interactions to less frequent settlement scenarios, making it suitable for a wide range of applications.",
   },
   {
     id: 5,
-    question: "Is it safe?",
-    answer: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    question: "Will Ziarat be open-source?",
+    answer: "Yes, Ziarat will be  an open-source protocol, promoting transparency and community collaboration.",
   },
 ];
 
