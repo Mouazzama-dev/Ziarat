@@ -19,19 +19,11 @@ const Hero = () => {
             {/* ====> Heading Part <===== */}
             <div className={`flex flex-wrap ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6  ${styles.paddingY}`}>
                 <div className='flex justify-between items-center w-full'>
-                    {/* <h1 className="flex-1 font-poppins font-semibold ss:text-[60px] text-[52px] text-white ss:leading-[100.8px] leading-[60px]">
+                    <h1 className="flex-1 font-poppins font-semibold ss:text-[60px] text-[52px] text-white ss:leading-[100.8px] leading-[60px]">
                         Ziarat's Protocol:<br className="sm:block hidden" />{" "}
                         Unlock the Future of Scalability!{" "}
-                    </h1> */}
-
-                    <h1 className="flex-1 font-poppins font-semibold ss:text-[60px] text-[52px] text-white ss:leading-[100.8px] leading-[60px]">
-                        Unlock the Future of <br className="sm:block hidden" />{" "}
-                        Scalability with Ziarat's Game-Changing{" "}
                     </h1>
                 </div>
-                <h1 className="font-poppins font-semibold ss:text-[60px] text-[52px] text-white ss:leading-[100.8px] leading-[75px] w-full">
-                    Protocol!
-                </h1>
                 <p className={`${styles.paragraph} max-w-[675px] mt-5`}>Ziarat revolutionizes scalability by combining off-chain transactions with zk-rollups, ensuring both efficiency and security. This breakthrough solution eliminates traditional limitations and enables lightning-fast transaction processing. Experience unparalleled speed with minimal delays, empowering businesses and users with limitless scalability.</p>
 
                 {/* ====> Buttons <==== */}
