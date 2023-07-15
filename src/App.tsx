@@ -7,6 +7,7 @@ import Hero from './components/Hero'
 import Navbar from './components/Navbar'
 import styles from './constants/style'
 import When from './components/When'
+import Partnership from './components/Partnership'
 
 function App() {
 
@@ -30,6 +31,7 @@ function App() {
         <div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
           <div className={`${styles.boxWidth}`}>
             <Business />
+            <Partnership />
             <FAQ />
             <When />
           </div>

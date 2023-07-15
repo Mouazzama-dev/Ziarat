@@ -17,9 +17,14 @@ const Hero = () => {
     return (
         <section id='#' className={`flex md:flex-row flex-col ${styles.paddingY}`}>
             {/* ====> Heading Part <===== */}
-            <div className={`flex flex-wrap ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`}>
+            <div className={`flex flex-wrap ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6  ${styles.paddingY}`}>
                 <div className='flex justify-between items-center w-full'>
-                    <h1 className="flex-1 font-poppins font-semibold ss:text-[60px] text-[52px] text-white ss:leading-[100.8px] leading-[75px">
+                    {/* <h1 className="flex-1 font-poppins font-semibold ss:text-[60px] text-[52px] text-white ss:leading-[100.8px] leading-[60px]">
+                        Ziarat's Protocol:<br className="sm:block hidden" />{" "}
+                        Unlock the Future of Scalability!{" "}
+                    </h1> */}
+
+                    <h1 className="flex-1 font-poppins font-semibold ss:text-[60px] text-[52px] text-white ss:leading-[100.8px] leading-[60px]">
                         Unlock the Future of <br className="sm:block hidden" />{" "}
                         Scalability with Ziarat's Game-Changing{" "}
                     </h1>

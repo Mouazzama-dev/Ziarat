@@ -1,60 +1,25 @@
-import React, { useState } from 'react'
-import dummyImg from '../assets/Ziarat Logo-08.png 21-09-27-834.png'
-import Button from './common/Button'
-import Modal from './common/Modal';
+import React from 'react'
+import styles from '../constants/style'
+import { partnershipData } from '../constants/constants'
+import PartnershipCard from './PartnershipCard'
 
-
-interface PartnershipProps {
-    img: string;
-    title: string;
-    description: string;
-    buttonText: string;
-}
-
-const Partnership: React.FC<PartnershipProps> = ({ img, title, description, buttonText }) => {
-    const [showNotifModal, setShowNotifModal] = useState<boolean>(false)
-    const [showContactModal, setShowContactModal] = useState<boolean>(false)
-
-
-    const openModal = (buttonText: string) => {
-        console.log('button', buttonText)
-        if (buttonText === 'Contact the Team') {
-            setShowContactModal((show) => !show)
-        } else if (buttonText === 'Notify Me') {
-            setShowNotifModal((show) => !show)
-        }
-
-    }
-
+const Partnership = () => {
     return (
-        <section id='partnership' className="col-span-6 rounded overflow-hidden border-2 flex flex-col items-center justify-center border-borderDark">
-            <div className="px-6">
-                <img className="w-[100px] object-contain" src={img} alt="feature img" />
-            </div>
-            <div className="px-6 py-4 flex flex-col items-center justify-center">
-                <div className="font-bold text-xl mb-2 text-white">{title}</div>
-                <p className="text-textColor text-base text-center">
-                    {description}
-                </p>
-            </div>
-            <div className='py-4 flex justify-center items-center max-w-[200px]'>
-                <Button text={buttonText} hasStroke={true} onClick={() => openModal(buttonText)} />
+        <section id='partnership' className={`flex flex-col ${styles.paddingX} ${styles.paddingY}`}>
+            {/* ====> Heading <==== */}
+            <div className={`flex justify-start items-center w-full mb-5`}>
+                <h1 className={`${styles.heading2} font-poppins`}>
+                    Partnership
+                </h1>
             </div>
 
-            {(showContactModal || showNotifModal) && (
-                <Modal
-                    isOpen={(showContactModal || showNotifModal)}
-                    handleOpen={() => openModal(buttonText)}
-                    heading={showContactModal ? 'Contact the team' : 'Notify me'}
-                    showCheckbox={showContactModal ? true : false}
-                    buttonText={buttonText}
-                />
-            )}
-
-
-        </section>
-
-
+            {/* ====> Cards <==== */}
+            <div className="grid lg:grid-cols-12 gap-x-3 gap-y-9 font-poppins">
+                {partnershipData.map(({ id, img, title, description, buttonText }) => (
+                    <PartnershipCard key={id} img={img} title={title} description={description} buttonText={buttonText} />
+                ))}
+            </div>
+        </section >
     )
 }
 

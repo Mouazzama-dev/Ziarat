@@ -1,8 +1,7 @@
 import React from 'react'
 import styles from '../constants/style'
 import FeatureCard from './FeatureCard'
-import Partnership from './Partnership'
-import { features, partnershipData } from '../constants/constants'
+import { features } from '../constants/constants'
 
 const Business = () => {
     return (
@@ -19,13 +18,7 @@ const Business = () => {
                 {features.map((({ id, img, title, description }) => (
                     <FeatureCard key={id} image={img} title={title} description={description} />
                 )))}
-
-                {partnershipData.map(({ id, img, title, description, buttonText }) => (
-                    <Partnership key={id} img={img} title={title} description={description} buttonText={buttonText} />
-                ))}
             </div>
-
-
         </section >
     )
 }
