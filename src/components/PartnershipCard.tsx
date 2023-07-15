@@ -26,17 +26,17 @@ const PartnershipCard: React.FC<PartnershipProps> = ({ img, title, description, 
     }
 
     return (
-        <section className="col-span-6 rounded overflow-hidden border-2 flex flex-col items-center justify-center border-borderDark">
+        <section id="customers" className="col-span-6  overflow-hidden  flex flex-col items-start justify-center">
             <div className="px-6">
                 <img className="w-[100px] object-contain" src={img} alt="feature img" />
             </div>
-            <div className="px-6 py-4 flex flex-col items-center justify-center">
-                <div className="font-bold text-xl mb-2 text-white">{title}</div>
-                <p className="text-textColor text-base text-center">
+            <div className="px-6 py-4 flex flex-col items-start justify-center">
+                <div className="font-bold text-4xl mb-2 text-white">{title}</div>
+                <p className="text-textColor text-base text-start">
                     {description}
                 </p>
             </div>
-            <div className='py-4 flex justify-center items-center max-w-[200px]'>
+            <div className='px-6  py-4 flex justify-center items-center  max-w-[200px]'>
                 <Button text={buttonText} hasStroke={true} onClick={() => openModal(buttonText)} />
             </div>
 

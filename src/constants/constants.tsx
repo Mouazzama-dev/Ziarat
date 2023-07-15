@@ -46,12 +46,12 @@ export const features = [
 
 export const partnershipData = [
   {
-    id: 'p1', img: dummyImg, title: 'Lorem Ipsum',
+    id: 'p1', img: dummyImg, title: 'Partnership',
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.',
     buttonText: 'Contact the Team'
   },
   {
-    id: 'p2', img: dummyImg, title: 'Lorem Ipsum',
+    id: 'p2', img: dummyImg, title: 'Customers',
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.',
     buttonText: 'Notify Me'
   },

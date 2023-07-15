@@ -7,11 +7,6 @@ const Partnership = () => {
     return (
         <section id='partnership' className={`flex flex-col ${styles.paddingX} ${styles.paddingY}`}>
             {/* ====> Heading <==== */}
-            <div className={`flex justify-start items-center w-full mb-5`}>
-                <h1 className={`${styles.heading2} font-poppins`}>
-                    Partnership
-                </h1>
-            </div>
 
             {/* ====> Cards <==== */}
             <div className="grid lg:grid-cols-12 gap-x-3 gap-y-9 font-poppins">
