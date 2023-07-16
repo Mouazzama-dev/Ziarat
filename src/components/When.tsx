@@ -2,6 +2,7 @@ import React from 'react'
 import styles from '../constants/style'
 import arrow from '../assets/arrow.svg.png'
 import { roadmaps } from '../constants/constants'
+import Button from './common/Button'
 
 const When = () => {
     return (
@@ -14,9 +15,9 @@ const When = () => {
             </div>
 
             {/* ====> Roadmap <==== */}
-            <div className='grid lg:grid-cols-12 font-poppins'>
+            <div className='grid lg:grid-cols-12 sm:gap-y-8  font-poppins'>
                 {roadmaps.map((quarter, index) => (
-                    <div key={quarter.image} className='col-span-3 border-r-1 mt-3 lg:border-r-2 border-borderDark/20'>
+                    <div key={quarter.image} className='col-span-3  border-r-1 mt-3 lg:border-r-2 border-borderDark/20'>
                         <div className='flex lg:justify-around items-center sm:justify-start'>
                             <img src={quarter.image} />
                             {index !== roadmaps.length - 1 && <img src={arrow} className="hidden lg:block" />}
@@ -35,6 +36,10 @@ const When = () => {
                     </div>
                 ))}
 
+            </div>
+            <div className='flex justify-center items-center'>
+                <Button text={'Notify Me When it Launches'} hasStroke fullWidth={true} />
+                {/* <Button text={buttonText} hasStroke={true} onClick={() => openModal(buttonText)} /> */}
             </div>
         </section>
     )
