@@ -15,8 +15,8 @@ const Business = () => {
 
             {/* ====> Cards <==== */}
             <div className="grid lg:grid-cols-12 gap-x-3 gap-y-9 font-poppins">
-                {features.map((({ id, img, title, description }) => (
-                    <FeatureCard key={id} image={img} title={title} description={description} />
+                {features.map((({ id, icon, title, description }) => (
+                    <FeatureCard key={id} icon={icon} title={title} description={description} />
                 )))}
             </div>
         </section >

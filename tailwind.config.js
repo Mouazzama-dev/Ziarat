@@ -19,6 +19,7 @@ export default withMT({
         textColor: "#7D7D7D",
         footerColor: "#00C4F4",
         blueGray: "#37474f",
+        iconBg: "#5F5F5F",
       },
       animation: {
         textanimate: "textanimate 1s",

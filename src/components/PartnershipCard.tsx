@@ -5,13 +5,13 @@ import Modal from './common/Modal';
 
 
 interface PartnershipProps {
-    img: string;
+    icon: JSX.Element;
     title: string;
     description: string;
     buttonText: string;
 }
 
-const PartnershipCard: React.FC<PartnershipProps> = ({ img, title, description, buttonText }) => {
+const PartnershipCard: React.FC<PartnershipProps> = ({ icon, title, description, buttonText }) => {
     const [showNotifModal, setShowNotifModal] = useState<boolean>(false)
     const [showContactModal, setShowContactModal] = useState<boolean>(false)
 
@@ -27,8 +27,8 @@ const PartnershipCard: React.FC<PartnershipProps> = ({ img, title, description, 
 
     return (
         <section id="customers" className="col-span-6  overflow-hidden  flex flex-col items-start justify-center">
-            <div className="px-6">
-                <img className="w-[100px] object-contain" src={img} alt="feature img" />
+            <div className="px-6 w-32 h-[100px] flex items-center">
+                {icon}
             </div>
             <div className="px-6 py-4 flex flex-col items-start justify-center">
                 <div className="font-bold text-4xl mb-2 text-white">{title}</div>

@@ -1,5 +1,14 @@
-import { BsInstagram, BsFacebook, BsTwitter, BsLinkedin } from "react-icons/bs";
+import { BsInstagram, BsFacebook, BsTwitter, BsLinkedin, BsGraphUpArrow } from "react-icons/bs";
+import { RxLightningBolt } from 'react-icons/rx'
+import { GiReceiveMoney } from 'react-icons/gi'
+import { IoIosPeople } from 'react-icons/io'
+import { FaRegHandshake } from 'react-icons/fa'
 import dummyImg from '../assets/Ziarat Logo-08.png 21-09-27-834.png'
+import Q1 from '../assets/Q1.svg.png';
+import Q2 from '../assets/Q2.png';
+import Q3 from '../assets/Q3.svg.png';
+import Q4 from '../assets/Q4.svg.png';
+
 
 export const navLinks = [
   {
@@ -38,20 +47,20 @@ export const socialLinks = [
 
 
 export const features = [
-  { id: 'f1', img: dummyImg, title: 'Fast transactions', description: 'One of the prominent competitive advantage is fast transaction with high scalability' },
-  { id: 'f2', img: dummyImg, title: 'Low transaction fees', description: 'By merging zk-rollups with state channels, transaction fees are significantly reduced, offering users a cost-effective solution for conducting transactions.' },
-  { id: 'f3', img: dummyImg, title: 'High scalability', description: 'The combination of zk-rollups and state channels results in exceptional scalability, allowing for a significant increase in transaction processing capacity and accommodating a large number of transactions simultaneously.' },
+  { id: 'f1', icon: <RxLightningBolt className="text-borderDark w-full h-full" />, title: 'Fast transactions', description: 'One of the prominent competitive advantage is fast transaction with high scalability' },
+  { id: 'f2', icon: <GiReceiveMoney className="text-borderDark w-full h-full" />, title: 'Low transaction fees', description: 'By merging zk-rollups with state channels, transaction fees are significantly reduced, offering users a cost-effective solution for conducting transactions.' },
+  { id: 'f3', icon: <BsGraphUpArrow className="text-borderDark w-full h-full" />, title: 'High scalability', description: 'The combination of zk-rollups and state channels results in exceptional scalability, allowing for a significant increase in transaction processing capacity and accommodating a large number of transactions simultaneously.' },
 ];
 
 
 export const partnershipData = [
   {
-    id: 'p1', img: dummyImg, title: 'Partnership',
+    id: 'p1', icon: <FaRegHandshake className="text-borderDark w-full h-full" />, title: 'Partnership',
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.',
     buttonText: 'Contact the Team'
   },
   {
-    id: 'p2', img: dummyImg, title: 'Customers',
+    id: 'p2', icon: <IoIosPeople className="text-borderDark w-full h-full" />, title: 'Customers',
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.',
     buttonText: 'Notify Me'
   },
@@ -185,6 +194,25 @@ export const footerLinks = [{
 
 },
 ]
+
+export const roadmaps = [
+  {
+    image: Q1,
+    roadmap: ["Initial Concept", "Developement of Ziarat web App", "Partners onboarding", "Alpha Version of Ziarat", "Gitbook (Ziarat SDK documentation)", "Hiring Developement Team"]
+  },
+  {
+    image: Q2,
+    roadmap: ["Beta version of Ziarat", "Airdrop", "Strategic Partnership & Collaboration", "Testnet Alpha launch", "Development of Ziarat wallet", "Grants Program launch"]
+  },
+  {
+    image: Q3,
+    roadmap: ["Testnet Beta launch", "Integration of Ziarat to other Wallets", "Listing on Exchanges", "Staking", "Ziarat Governance token"]
+  },
+  {
+    image: Q4,
+    roadmap: ["Ziarat Mainnet Release", "Bug bounties launch", "Ziarat mainnet validator onboarding"]
+  }
+];
 
 
 export interface ModalProps {
