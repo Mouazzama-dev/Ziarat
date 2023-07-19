@@ -28,7 +28,7 @@ const Hero = () => {
 
                 {/* ====> Buttons <==== */}
                 <div className='mt-5 grid lg:grid-cols-2 gap-10 max-w-[430px]'>
-                    <Button text={'Follow us'} icon={<BsTwitter />} />
+                    <Button text={'Follow us'} icon={<BsTwitter />} hasLink />
                     <Button text={'Contact the team'} hasStroke={true} onClick={openModal} />
                 </div>
             </div>
