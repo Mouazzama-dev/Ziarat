@@ -8,7 +8,7 @@ const Footer = () => {
         <footer id='footer' className={`flex-col`}>
 
             <div className="w-full flex justify-between items-center md:flex-row">
-                <div className='flex justify-center items-center max-w-[120px] bg-blue-gray-400'>
+                <div className='flex justify-center items-center max-w-[140px]'>
                     <img src={logo} alt="Ziarat" className="w-full object-cover cursor-pointer" />
                 </div>
 
