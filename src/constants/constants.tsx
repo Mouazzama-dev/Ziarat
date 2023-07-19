@@ -12,27 +12,27 @@ import Q4 from '../assets/Q4.svg.png';
 
 export const navLinks = [
   {
-    id: "why",
+    id: "#why",
     title: "Why Ziarat",
   },
   {
-    id: "partnership",
+    id: "#partnership",
     title: "Partnership",
   },
   {
-    id: "customers",
+    id: "#customers",
     title: "Customers",
   },
   {
-    id: "faq",
+    id: "#faq",
     title: "F.A.Q",
   },
   {
-    id: "when",
+    id: "#when",
     title: "When",
   },
   {
-    id: "hiring",
+    id: "https://forms.gle/YBsekvs3hjWjzu6J7",
     title: "Hiring",
   },
 ];

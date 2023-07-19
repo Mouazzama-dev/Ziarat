@@ -28,7 +28,7 @@ const Navbar = () => {
                         <li
                             key={nav.id}
                         >
-                            <a className={idx === 0 ? 'capitalize text-white hover:text-borderDark transition duration-150' : 'capitalize text-dimWhite hover:text-cyan-400 transition duration-150'} href={`#${nav.id}`}>
+                            <a className={idx === 0 ? 'capitalize text-white hover:text-borderDark transition duration-150' : 'capitalize text-dimWhite hover:text-cyan-400 transition duration-150'} href={`${nav.id}`} target={idx === 5 ? '_blank' : '_self'}>
                                 {nav.title}
                             </a>
                         </li>
