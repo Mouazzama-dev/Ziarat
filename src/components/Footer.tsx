@@ -1,32 +1,26 @@
 import React from 'react'
 import styles from '../constants/style'
-import { footerLinks } from '../constants/constants'
+import { footerLinks, socialLinks } from '../constants/constants'
+import logo from '../assets/logo.webp';
 
 const Footer = () => {
     return (
-        <footer id='footer' className={`${styles.flexCenter} flex-col `}>
-            <div className={`${styles.flexStart}  md:flex-row flex-col mb-8 w-full `}>
+        <footer id='footer' className={`flex-col`}>
 
-                {/* ====> Links <==== */}
-                <div className="flex-[1.5] w-full flex md:flex-row justify-between flex-col md:mt-0 mt-10">
-                    {footerLinks.map((footerlink) => (
-                        <div key={footerlink.title} className={`flex flex-col ss:my-0 my-4 min-w-[150px] `}>
-                            <h4 className="font-poppins font-medium text-[18px] leading-[27px] text-white">
-                                {footerlink.title}
-                            </h4>
-                            <ul className="list-none mt-4">
-                                {footerlink.links.map((link, index) => (
-                                    <li key={link.name} className={`font-poppins font-normal text-[16px] leading-[24px] text-dimWhite hover:text-borderDark cursor-pointer ${index !== footerlink.links.length - 1 ? "mb-4" : "mb-0"
-                                        }`}>
-                                        {link.name}
-                                    </li>
-                                ))}
-                            </ul>
-                        </div>
-                    ))}
+            <div className="w-full flex justify-between items-center md:flex-row">
+                <div className='flex justify-center items-center max-w-[120px] bg-blue-gray-400'>
+                    <img src={logo} alt="Ziarat" className="w-full object-cover cursor-pointer" />
                 </div>
 
-
+                <div className="flex flex-row md:mt-0 mt-6 justify-center items-center">
+                    <ul className='flex text-2xl text-white gap-8'>
+                        {socialLinks.map(({ id, url, icon }) => (
+                            <li className=' hover:text-borderDark transition duration-150 ' key={id}>
+                                <a href={url} target='_blank'>{icon}</a>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
             </div>
 
         </footer>

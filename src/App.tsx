@@ -14,7 +14,6 @@ function App() {
 
   return (
     <>
-
       <div className="bg-primary w-full h-full overflow-hidden">
         <div className={`${styles.paddingX}  ${styles.flexCenter} sticky top-0 z-10 `}>
           <div className={`${styles.boxWidth} ${styles.paddingX} `}>
@@ -37,8 +36,8 @@ function App() {
           </div>
         </div>
 
-        <div className={`${styles.flexStart} lg:h-52`}>
-          <div className={`${styles.boxWidth} ${styles.paddingX} pt-3 bg-footerColor/30`}>
+        <div>
+          <div className={`${styles.boxWidth} ${styles.paddingX} bottom-0 bg-footerColor/30`}>
             <Footer />
           </div>
         </div>
