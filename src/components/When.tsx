@@ -37,8 +37,8 @@ const When = () => {
                 ))}
 
             </div>
-            <div className='flex justify-center items-center'>
-                <Button text={'Notify Me When it Launches'} hasStroke fullWidth={true} />
+            <div className='flex bg-blue-gray-300 justify-center items-center w-80 flex-col'>
+                <Button text={'Notify Me When it Launches'} hasStroke fullWidth />
                 {/* <Button text={buttonText} hasStroke={true} onClick={() => openModal(buttonText)} /> */}
             </div>
         </section>
