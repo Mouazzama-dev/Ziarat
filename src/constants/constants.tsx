@@ -1,4 +1,4 @@
-import { BsInstagram, BsFacebook, BsTwitter, BsLinkedin, BsGraphUpArrow } from "react-icons/bs";
+import { BsInstagram, BsFacebook, BsTwitter, BsLinkedin, BsGraphUpArrow, BsDiscord } from "react-icons/bs";
 import { RxLightningBolt } from 'react-icons/rx'
 import { GiReceiveMoney } from 'react-icons/gi'
 import { IoIosPeople } from 'react-icons/io'
@@ -38,10 +38,10 @@ export const navLinks = [
 ];
 
 export const socialLinks = [
-  { id: 'insta', icon: <BsInstagram />, url: "https://www.instagram.com/" },
-  { id: 'fb', icon: <BsFacebook />, url: "https://www.facebook.com/" },
-  { id: 'tw', icon: <BsTwitter />, url: "https://www.twitter.com/" },
-  { id: 'linIn', icon: <BsLinkedin />, url: "https://www.linkedin.com/" },
+
+  { id: 'dc', icon: <BsDiscord />, url: "https://discord.gg/5T9gTvMgR7" },
+  { id: 'tw', icon: <BsTwitter />, url: "https://twitter.com/ziarat_info" },
+  { id: 'linIn', icon: <BsLinkedin />, url: "https://www.linkedin.com/company/ziaratofficial/" },
 ];
 
 
@@ -56,12 +56,12 @@ export const features = [
 export const partnershipData = [
   {
     id: 'p1', icon: <FaRegHandshake className="text-borderDark w-full h-full" />, title: 'Partnership',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.',
+    description: 'If you  are building on Ethereum and looking for the scalable platform to run on or making tools or dApps.',
     buttonText: 'Contact the Team'
   },
   {
     id: 'p2', icon: <IoIosPeople className="text-borderDark w-full h-full" />, title: 'Customers',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.',
+    description: 'If you are interested in using the protocol and participating in its life.',
     buttonText: 'Notify Me'
   },
 ];

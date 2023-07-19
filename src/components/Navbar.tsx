@@ -38,10 +38,10 @@ const Navbar = () => {
 
             {/* =====> SocialLinks div <======*/}
             <div className='md:flex hidden items-center text-white '>
-                <ul className='w-full grid grid-cols-4 items-center cursor-pointer text-lg'>
+                <ul className='w-full grid grid-cols-3 items-center cursor-pointer text-lg'>
                     {socialLinks.map(({ id, url, icon }) => (
                         <li className='flex justify-end hover:text-borderDark transition duration-150 ' key={id}>
-                            <a href={url}>{icon}</a>
+                            <a href={url} target='_blank'>{icon}</a>
                         </li>
                     ))}
                 </ul>
