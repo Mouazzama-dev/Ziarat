@@ -3,7 +3,7 @@ import styles from '../constants/style'
 import Accordian from './common/Accordian'
 import { faqData } from '../constants/constants'
 
-const FAQ = () => {
+const FAQ: React.FC = () => {
   return (
     <section id='faq' className={`flex flex-col ${styles.paddingX} ${styles.paddingY}`}>
       {/* ====> Heading <==== */}

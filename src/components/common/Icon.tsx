@@ -1,8 +1,8 @@
 import React from 'react'
 
 interface IconProps {
-    id: string;
-    open: string;
+    id: number;
+    open: number;
 }
 
 const Icon: React.FC<IconProps> = ({ id, open }) => {

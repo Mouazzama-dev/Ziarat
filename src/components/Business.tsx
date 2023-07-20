@@ -3,7 +3,7 @@ import styles from '../constants/style'
 import FeatureCard from './FeatureCard'
 import { features } from '../constants/constants'
 
-const Business = () => {
+const Business: React.FC = () => {
     return (
         <section id='why' className={`flex flex-col ${styles.paddingX} `}>
             {/* ====> Heading <==== */}
