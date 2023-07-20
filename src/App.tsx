@@ -36,11 +36,11 @@ function App() {
           </div>
         </div>
 
-        <div>
+        {/* <div>
           <div className={`${styles.boxWidth} ${styles.paddingX} bottom-0 bg-footerColor/30`}>
             <Footer />
           </div>
-        </div>
+        </div> */}
 
       </div>
 

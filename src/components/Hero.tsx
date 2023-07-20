@@ -4,6 +4,16 @@ import Button from './common/Button'
 import { BsTwitter } from 'react-icons/bs'
 import logo from '../assets/logo.webp'
 import Modal from './common/Modal'
+import hero1 from '../assets/heroImg.jpeg';
+import hero2 from '../assets/heroImg2.jpeg';
+import hero3 from '../assets/heroImg3.jpeg';
+import hero4 from '../assets/heroImg4.jpeg'
+import hero5 from '../assets/heroImg2-removebg-preview.png'
+import hero6 from '../assets/heroImg4-removebg-preview.png'
+import her7 from '../assets/hero7.jpeg';
+import hero8 from '../assets/hero8.jpeg';
+
+
 
 
 const Hero = () => {
@@ -15,9 +25,9 @@ const Hero = () => {
     }
 
     return (
-        <section id='#' className={`flex md:flex-row flex-col ${styles.paddingY}`}>
+        <section className={`flex md:flex-row flex-col ${styles.paddingY}`}>
             {/* ====> Heading Part <===== */}
-            <div className={`flex flex-wrap ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6  ${styles.paddingY}`}>
+            <div className={`flex flex-wrap ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6 w-full md:w-1/2 ${styles.paddingY}`}>
                 <div className='flex justify-between items-center w-full'>
                     <h1 className="flex-1 font-poppins font-semibold ss:text-[60px] text-[52px] text-white ss:leading-[100.8px] leading-[60px]">
                         Ziarat's Protocol:<br className="sm:block hidden" />{" "}
@@ -35,8 +45,8 @@ const Hero = () => {
 
 
             {/* ====> Imaga Part <===== */}
-            <div className='flex-initial w-full md:w-1/2' >
-                <img src={logo} alt="Ziarat Hero" className='w-[100%] h-[100%]' />
+            <div className='flex-initial w-full md:w-1/2 ' >
+                <img src={hero1} alt="Ziarat Hero" className='w-[100%] h-[100%] object-contain' />
             </div>
 
 

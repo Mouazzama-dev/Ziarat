@@ -26,7 +26,7 @@ const PartnershipCard: React.FC<PartnershipProps> = ({ icon, title, description,
     }
 
     return (
-        <section id="customers" className="col-span-6  overflow-hidden  flex flex-col items-start justify-center">
+        <section id="customers" className="col-span-6  overflow-hidden flex flex-col items-start justify-center">
             <div className="px-6 w-32 h-[100px] flex items-center">
                 {icon}
             </div>
