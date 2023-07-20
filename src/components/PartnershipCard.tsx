@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import dummyImg from '../assets/Ziarat Logo-08.png 21-09-27-834.png'
 import Button from './common/Button'
 import Modal from './common/Modal';
 

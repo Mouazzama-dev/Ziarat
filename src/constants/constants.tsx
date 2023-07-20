@@ -1,9 +1,8 @@
-import { BsInstagram, BsFacebook, BsTwitter, BsLinkedin, BsGraphUpArrow, BsDiscord } from "react-icons/bs";
+import { BsTwitter, BsLinkedin, BsGraphUpArrow, BsDiscord } from "react-icons/bs";
 import { RxLightningBolt } from 'react-icons/rx'
 import { GiReceiveMoney } from 'react-icons/gi'
 import { IoIosPeople } from 'react-icons/io'
 import { FaRegHandshake } from 'react-icons/fa'
-import dummyImg from '../assets/Ziarat Logo-08.png 21-09-27-834.png'
 import Q1 from '../assets/Q1.svg.png';
 import Q2 from '../assets/Q2.png';
 import Q3 from '../assets/Q3.svg.png';
