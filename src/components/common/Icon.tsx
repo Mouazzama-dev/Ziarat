@@ -1,6 +1,11 @@
 import React from 'react'
 
-const Icon = ({ id, open }) => {
+interface IconProps {
+    id: string;
+    open: string;
+}
+
+const Icon: React.FC<IconProps> = ({ id, open }) => {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
