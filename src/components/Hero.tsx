@@ -2,16 +2,10 @@ import React, { useState } from 'react'
 import styles from '../constants/style'
 import Button from './common/Button'
 import { BsTwitter } from 'react-icons/bs'
-import logo from '../assets/logo.webp'
 import Modal from './common/Modal'
-import hero1 from '../assets/heroImg.jpeg';
-import hero2 from '../assets/heroImg2.jpeg';
-import hero3 from '../assets/heroImg3.jpeg';
-import hero4 from '../assets/heroImg4.jpeg'
-import hero5 from '../assets/heroImg2-removebg-preview.png'
-import hero6 from '../assets/heroImg4-removebg-preview.png'
-import her7 from '../assets/hero7.jpeg';
-import hero8 from '../assets/hero8.jpeg';
+import heroImg from '../assets/herob.webp';
+
+
 
 
 
@@ -46,7 +40,7 @@ const Hero = () => {
 
             {/* ====> Imaga Part <===== */}
             <div className='flex-initial w-full md:w-1/2 ' >
-                <img src={hero1} alt="Ziarat Hero" className='w-[100%] h-[100%] object-contain' />
+                <img src={heroImg} alt="Ziarat Hero" className='w-[100%] h-[100%] object-contain' />
             </div>
 
 
