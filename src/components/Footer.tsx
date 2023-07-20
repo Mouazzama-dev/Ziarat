@@ -1,9 +1,8 @@
 import React from 'react'
-import styles from '../constants/style'
-import { footerLinks, socialLinks } from '../constants/constants'
+import { socialLinks } from '../constants/constants'
 import logo from '../assets/logo.webp';
 
-const Footer = () => {
+const Footer: React.FC = () => {
     return (
         <footer id='footer' className={`flex-col`}>
 

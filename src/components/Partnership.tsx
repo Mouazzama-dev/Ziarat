@@ -3,7 +3,7 @@ import styles from '../constants/style'
 import { partnershipData } from '../constants/constants'
 import PartnershipCard from './PartnershipCard'
 
-const Partnership = () => {
+const Partnership: React.FC = () => {
     return (
         <section id='partnership' className={`flex flex-col ${styles.paddingX} ${styles.paddingY}`}>
             {/* ====> Heading <==== */}

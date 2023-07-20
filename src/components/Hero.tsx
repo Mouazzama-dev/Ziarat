@@ -6,11 +6,7 @@ import Modal from './common/Modal'
 import heroImg from '../assets/herob.webp';
 
 
-
-
-
-
-const Hero = () => {
+const Hero: React.FC = () => {
     const [showModal, setShowModal] = useState<boolean>(false)
 
 

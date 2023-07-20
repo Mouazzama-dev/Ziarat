@@ -9,7 +9,7 @@ import close from '../assets/close.svg';
 
 import { navLinks, socialLinks } from '../constants/constants'
 import styles from '../constants/style'
-const Navbar = () => {
+const Navbar: React.FC = () => {
     const [toggle, setToggle] = useState<boolean>(false);
 
 

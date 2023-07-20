@@ -2,9 +2,8 @@ import React from 'react'
 import styles from '../constants/style'
 import arrow from '../assets/arrow.svg.png'
 import { roadmaps } from '../constants/constants'
-import Button from './common/Button'
 
-const When = () => {
+const When: React.FC = () => {
     return (
         <section id='when' className={`flex flex-col ${styles.paddingX} ${styles.paddingY}`}>
             {/* ====> Heading <==== */}
