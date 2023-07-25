@@ -3,7 +3,7 @@ const styles = {
 
   heading2: "flex-1 font-poppins font-semibold text-white text-[42px]",
   paragraph:
-    "font-poppins font-normal text-dimWhite text-[18px] leading-[30.8px]",
+    "font-poppins font-normal text-dimWhite text-[16px] leading-[30.8px]",
 
   flexCenter: "flex justify-center items-center",
   flexStart: "flex justify-center items-start",

@@ -7,12 +7,12 @@ export default withMT({
   theme: {
     extend: {
       colors: {
-        primary: "#030B15",
+        primary: "#000235",
         secondary: "#00f6ff",
         dimWhite: "rgba(255, 255, 255, 0.7)",
         dimBlue: "rgba(9, 151, 124, 0.1)",
         gold: "#b18f40",
-        btn_primary: "#1da1f2",
+        btn_primary: "#0B021E",
         btn_primary_hover: "#2287C9",
         borderLight: "#353535",
         borderDark: "#00ADD8",
@@ -20,6 +20,8 @@ export default withMT({
         footerColor: "#00C4F4",
         blueGray: "#37474f",
         iconBg: "#5F5F5F",
+        grayColor: "#A8A7A8",
+        navColor: "#787AA5",
       },
       animation: {
         textanimate: "textanimate 1s",
