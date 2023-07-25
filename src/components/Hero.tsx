@@ -3,7 +3,8 @@ import styles from '../constants/style'
 import Button from './common/Button'
 import { BsTwitter } from 'react-icons/bs'
 import Modal from './common/Modal'
-import heroImg from '../assets/herob.webp';
+import heroImg from '../assets/Ziarat web design 3/SVG Assets/Asset 3.svg';
+import daimond from '../assets/Ziarat web design 3/SVG Assets/Diamond.svg'
 
 
 const Hero: React.FC = () => {
@@ -35,7 +36,10 @@ const Hero: React.FC = () => {
 
 
             {/* ====> Imaga Part <===== */}
-            <div className='flex-initial w-full md:w-1/2 ' >
+            <div className='flex-initial w-full md:w-1/2 relative' >
+                <div className='w-[20%] absolute top-[3%] right-[38%] animate-bounce'>
+                    <img src={daimond} alt="Ziarat Diamond" className='object-contained' />
+                </div>
                 <img src={heroImg} alt="Ziarat Hero" className='w-[100%] h-[100%] object-contain' />
             </div>
 

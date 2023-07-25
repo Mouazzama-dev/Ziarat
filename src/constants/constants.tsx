@@ -31,7 +31,7 @@ export const navLinks = [
     title: "When",
   },
   {
-    id: "https://forms.gle/YBsekvs3hjWjzu6J7",
+    id: `https://forms.gle/YBsekvs3hjWjzu6J7`,
     title: "Hiring",
   },
 ];

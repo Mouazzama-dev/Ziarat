@@ -28,7 +28,7 @@ const Navbar: React.FC = () => {
                         <li
                             key={nav.id}
                         >
-                            <a className={idx === 0 ? 'capitalize text-white hover:text-borderDark transition duration-150' : 'capitalize text-dimWhite hover:text-cyan-400 transition duration-150'} href={idx === 5 ? 'https://forms.gle/YBsekvs3hjWjzu6J7' : `#${nav.id}`} target={idx === 5 ? '_blank' : ''}>
+                            <a className={idx === 0 ? 'capitalize text-white hover:text-borderDark transition duration-150' : 'capitalize text-dimWhite hover:text-cyan-400 transition duration-150'} href={idx === 5 ? `${nav.id}` : `#${nav.id}`} target={idx === 5 ? '_blank' : ''}>
                                 {nav.title}
                             </a>
                         </li>
