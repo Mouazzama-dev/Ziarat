@@ -31,8 +31,9 @@ function App() {
           <div className={`${styles.boxWidth}`}>
             <Business />
             <Partnership />
-            <FAQ />
             <When />
+            <FAQ />
+
           </div>
         </div>
 

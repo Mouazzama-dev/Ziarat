@@ -3,8 +3,8 @@ import styles from '../constants/style'
 import Button from './common/Button'
 import { BsTwitter } from 'react-icons/bs'
 import Modal from './common/Modal'
-import heroImg from '../assets/Ziarat web design 3/SVG Assets/Asset 3.svg';
-import daimond from '../assets/Ziarat web design 3/SVG Assets/Diamond.svg'
+import heroImg from '../assets/hero.svg';
+import daimond from '../assets/Diamond.svg'
 import star from '../assets/star.png'
 
 

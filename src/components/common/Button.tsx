@@ -12,8 +12,8 @@ interface ButtonProps {
 
 const Button: React.FC<ButtonProps> = ({ text, hasStroke, hasLink, onClick, icon, fullWidth }) => {
 
-    const buttonStyles = `${fullWidth ? 'w-full' : 'w-[172px]'}  h-[46px] font-poppins flex justify-center cursor-pointer items-center text-white 
-    rounded-md bg-btn_primary hover:bg-btn_primary_hover hover:ease-in transition duration-150 ${hasStroke ? `border-gradient border-gradient-purple bg-transparent hover:border-none hover:bg-btn_primary` : ''
+    const buttonStyles = `${fullWidth ? 'w-full' : 'w-[172px]'}  h-[46px] font-poppins flex justify-center cursor-pointer items-center text-grayColor 
+    bg-btn_primary duration-70 ${hasStroke ? `border-gradient border-gradient-purple button-text-gradient` : 'purple-shadow'
         }`;
 
     return hasLink ? (

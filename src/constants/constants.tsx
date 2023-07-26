@@ -3,10 +3,14 @@ import { RxLightningBolt } from 'react-icons/rx'
 import { GiReceiveMoney } from 'react-icons/gi'
 import { IoIosPeople } from 'react-icons/io'
 import { FaRegHandshake } from 'react-icons/fa'
-import Q1 from '../assets/Q1.svg.png';
+
+import magnifying from '../assets/magnified.png'
+import settings from '../assets/settings.png';
+import rocket from '../assets/rocket.png';
+import Q1 from '../assets/Q1.png';
 import Q2 from '../assets/Q2.png';
-import Q3 from '../assets/Q3.svg.png';
-import Q4 from '../assets/Q4.svg.png';
+import Q3 from '../assets/Q3.png';
+import Q4 from '../assets/Q4.png';
 
 
 export const navLinks = [
@@ -46,9 +50,9 @@ export const socialLinks = [
 
 
 export const features = [
-  { id: 'f1', icon: <RxLightningBolt className="text-borderDark w-full h-full" />, title: 'Fast transactions', description: 'One of the prominent competitive advantage is fast transaction with high scalability' },
-  { id: 'f2', icon: <GiReceiveMoney className="text-borderDark w-full h-full" />, title: 'Low transaction fees', description: 'By merging zk-rollups with state channels, transaction fees are significantly reduced, offering users a cost-effective solution for conducting transactions.' },
-  { id: 'f3', icon: <BsGraphUpArrow className="text-borderDark w-full h-full" />, title: 'High scalability', description: 'The combination of zk-rollups and state channels results in exceptional scalability, allowing for a significant increase in transaction processing capacity and accommodating a large number of transactions simultaneously.' },
+  { id: 'f1', image: magnifying, title: 'Fast transactions', description: 'One of the prominent competitive advantage is fast transaction with high scalability' },
+  { id: 'f2', image: settings, title: 'Low transaction fees', description: 'By merging zk-rollups with state channels, transaction fees are significantly reduced, offering users a cost-effective solution for conducting transactions.' },
+  { id: 'f3', image: rocket, title: 'High scalability', description: 'The combination of zk-rollups and state channels results in exceptional scalability, allowing for a significant increase in transaction processing capacity and accommodating a large number of transactions simultaneously.' },
 ];
 
 

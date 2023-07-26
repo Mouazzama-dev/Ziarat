@@ -4,13 +4,12 @@ import Modal from './common/Modal';
 
 
 interface PartnershipProps {
-    icon: JSX.Element;
     title: string;
     description: string;
     buttonText: string;
 }
 
-const PartnershipCard: React.FC<PartnershipProps> = ({ icon, title, description, buttonText }) => {
+const PartnershipCard: React.FC<PartnershipProps> = ({ title, description, buttonText }) => {
     const [showNotifModal, setShowNotifModal] = useState<boolean>(false)
     const [showContactModal, setShowContactModal] = useState<boolean>(false)
 
@@ -25,18 +24,16 @@ const PartnershipCard: React.FC<PartnershipProps> = ({ icon, title, description,
     }
 
     return (
-        <section id="customers" className="col-span-6  overflow-hidden flex flex-col items-start justify-center">
-            <div className="px-6 w-32 h-[100px] flex items-center">
-                {icon}
-            </div>
+        <section id="customers" className={`col-span-6 bg-purple-gradient py-6 overflow-hidden flex flex-col items-start justify-center`}>
+
             <div className="px-6 py-4 flex flex-col items-start justify-center">
                 <div className="font-bold text-4xl mb-2 text-white">{title}</div>
                 <p className="text-textColor text-base text-start">
                     {description}
                 </p>
             </div>
-            <div className='px-6  py-4 flex justify-center items-center  max-w-[200px]'>
-                <Button text={buttonText} hasStroke={true} onClick={() => openModal(buttonText)} />
+            <div className='px-6  py-4 flex  w-full justify-end items-center '>
+                <Button text={buttonText} onClick={() => openModal(buttonText)} />
             </div>
 
             {(showContactModal || showNotifModal) && (
