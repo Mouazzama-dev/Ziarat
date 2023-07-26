@@ -10,8 +10,8 @@ const Partnership: React.FC = () => {
 
             {/* ====> Cards <==== */}
             <div className="grid lg:grid-cols-12 lg:gap-x-20 gap-y-9 font-poppins">
-                {partnershipData.map(({ id, icon, title, description, buttonText }) => (
-                    <PartnershipCard key={id} icon={icon} title={title} description={description} buttonText={buttonText} />
+                {partnershipData.map(({ id, title, description, buttonText }) => (
+                    <PartnershipCard key={id} title={title} description={description} buttonText={buttonText} />
                 ))}
             </div>
         </section >

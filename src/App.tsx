@@ -8,6 +8,7 @@ import Navbar from './components/Navbar'
 import styles from './constants/style'
 import When from './components/When'
 import Partnership from './components/Partnership'
+import Dynamic from './components/Dynamic'
 
 function App() {
 
@@ -31,6 +32,7 @@ function App() {
           <div className={`${styles.boxWidth}`}>
             <Business />
             <Partnership />
+            <Dynamic />
             <When />
             <FAQ />
 

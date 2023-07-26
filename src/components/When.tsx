@@ -16,7 +16,7 @@ const When: React.FC = () => {
             {/* ====> Roadmap <==== */}
             <div className={`bg-faq-gradient ${styles.paddingX} ${styles.paddingY}`}>
                 <div className='grid lg:grid-cols-12 sm:gap-y-8  gap-3 font-poppins'>
-                    {roadmaps.map((quarter, index) => (
+                    {roadmaps.map((quarter) => (
                         <div key={quarter.image} className={`col-span-3 flex flex-col justify-between mt-3 border rounded-md`}>
 
                             <div className='relative'>
