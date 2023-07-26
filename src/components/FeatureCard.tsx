@@ -10,7 +10,7 @@ interface FeatureCardProps {
 
 const FeatureCard: React.FC<FeatureCardProps> = ({ index, img, title, description }) => {
     return (
-        <div className={`rounded overflow-hidden flex justify-center flex-col rounded-sm items-center border ${index === 1 ? 'border-borderDark ' : 'border-none'} shadow-lg col-span-6 md:col-span-4`}>
+        <div className={`rounded overflow-hidden flex justify-center flex-col  items-center border ${index === 1 ? 'border-borderDark ' : 'border-none'} shadow-lg col-span-6 md:col-span-4`}>
             <div className="px-6 ml-3 mt-1 w-[80px] h-[80px] flex items-center bg-circle-gradient rounded-full">
                 <img src={img} />
             </div>

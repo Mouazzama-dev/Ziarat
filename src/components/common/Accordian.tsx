@@ -1,6 +1,7 @@
 import React, { Fragment, useState } from 'react'
 import { Accordion, AccordionBody, AccordionHeader } from '@material-tailwind/react';
 import Icon from './Icon';
+import styles from '../../constants/style';
 
 
 
@@ -21,11 +22,11 @@ const Accordian: React.FC<AccordionProps> = ({ accId, question, answer }) => {
     };
     return (
         <Fragment>
-            <Accordion open={open === accId} icon={<Icon id={accId} open={open} />}>
-                <AccordionHeader onClick={() => handleOpen(accId)} className='text-white hover:text-borderDark'>
+            <Accordion className={`px-3 bg-purple-gradient`} open={open === accId} icon={<Icon id={accId} open={open} />}>
+                <AccordionHeader onClick={() => handleOpen(accId)} className='text-dimGray hover:text-lightGray outline-none'>
                     {question}
                 </AccordionHeader>
-                <AccordionBody className='text-dimWhite text-lg'>
+                <AccordionBody className='text-dimGray text-lg'>
                     {answer}
                 </AccordionBody>
             </Accordion>

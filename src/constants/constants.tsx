@@ -91,13 +91,9 @@ export const faqData: AccordionItem[] = [
     question: "Will Ziarat have a token?",
     answer: "We are actively working on the tokenomics of Ziarat, to drive the platform's economy and ensure early builders are supported.",
   },
+
   {
     id: 4,
-    question: "Can Ziarat be used for a variety of applications?",
-    answer: "Yes, Ziarat's flexible design caters to diverse use cases, from frequent and fast interactions to less frequent settlement scenarios, making it suitable for a wide range of applications.",
-  },
-  {
-    id: 5,
     question: "Will Ziarat be open-source?",
     answer: "Yes, Ziarat will be  an open-source protocol, promoting transparency and community collaboration.",
   },
