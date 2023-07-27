@@ -9,7 +9,7 @@ export default withMT({
       colors: {
         primary: "#000235",
         secondary: "#00f6ff",
-        dimWhite: "rgba(255, 255, 255, 0.7)",
+        dimWhite: "#999AAB",
         lightGray: "#9C9DC2",
         dimGray: "#787AA5",
         dimGrayText: "#5C5D75",

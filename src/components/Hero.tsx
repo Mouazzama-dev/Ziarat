@@ -46,7 +46,7 @@ const Hero: React.FC = () => {
 
             {/* ====> Imaga Part <===== */}
             <div className='flex-initial w-full md:w-2/5 relative' >
-                <div className='w-[20%] absolute lg:top-[10%]  right-[38%] animate-bounce'>
+                <div className='w-[20%] absolute lg:top-[10%]  right-[38%]  animate-bounce'>
                     <img src={daimond} alt="Ziarat Diamond" className='object-contained' />
                 </div>
                 <img src={heroImg} alt="Ziarat Hero" className='w-[100%] h-[100%] object-contain' />

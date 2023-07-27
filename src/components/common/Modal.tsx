@@ -39,7 +39,7 @@ const ContactModal: React.FC<ModalProps> = ({ isOpen, handleOpen, heading, showC
             className="bg-transparent drop-shadow-lg"
 
         >
-            <Card className="mx-auto max-w-[24rem] bg-black-gradient-2 ">
+            <Card className="mx-auto max-w-[24rem] bg-black-gradient">
                 <DialogHeader className='flex justify-center items-center font-poppins text-white'  >{heading}</DialogHeader>
                 {!formSubmit ? (
                     <DialogBody className="flex flex-col gap-4" >

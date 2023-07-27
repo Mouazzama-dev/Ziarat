@@ -9,6 +9,7 @@ import styles from './constants/style'
 import When from './components/When'
 import Partnership from './components/Partnership'
 import Dynamic from './components/Dynamic'
+import CTA from './components/CTA'
 
 function App() {
 
@@ -30,6 +31,7 @@ function App() {
 
         <div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
           <div className={`${styles.boxWidth}`}>
+            <CTA />
             <Business />
             <Partnership />
             <Dynamic />

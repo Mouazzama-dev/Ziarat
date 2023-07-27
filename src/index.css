@@ -128,21 +128,33 @@
   }
 }
 
+@keyframes tem-bounce {
+  0%,
+  100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
 .bg-black-gradient {
   background: linear-gradient(
     144.39deg,
     #ffffff -278.56%,
     #6d6d6d -78.47%,
-    #11101d 91.61%
+    #000235 91.61%
   );
 }
 
 .bg-black-gradient-2 {
   background: linear-gradient(
-    -168.39deg,
+    -180.39deg,
     #ffffff -278.56%,
-    #6d6d6d -78.47%,
-    #11101d 91.61%
+    #96f5ec67 -78.47%,
+    #b27bca37 91.61%
   );
 }
 
