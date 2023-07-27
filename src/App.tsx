@@ -10,6 +10,7 @@ import When from './components/When'
 import Partnership from './components/Partnership'
 import Dynamic from './components/Dynamic'
 import CTA from './components/CTA'
+import Footer from './components/Footer'
 
 function App() {
 
@@ -37,16 +38,9 @@ function App() {
             <Dynamic />
             <When />
             <FAQ />
-
-          </div>
-        </div>
-
-        {/* <div>
-          <div className={`${styles.boxWidth} ${styles.paddingX} bottom-0 bg-footerColor/30`}>
             <Footer />
           </div>
-        </div> */}
-
+        </div>
       </div>
 
     </>

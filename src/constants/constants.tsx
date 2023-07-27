@@ -1,8 +1,6 @@
-import { BsTwitter, BsLinkedin, BsGraphUpArrow, BsDiscord } from "react-icons/bs";
-import { RxLightningBolt } from 'react-icons/rx'
-import { GiReceiveMoney } from 'react-icons/gi'
+import { BsTwitter, BsDiscord } from "react-icons/bs";
 import { IoIosPeople } from 'react-icons/io'
-import { FaRegHandshake } from 'react-icons/fa'
+import { FaLinkedinIn, FaRegHandshake } from 'react-icons/fa'
 
 import magnifying from '../assets/magnified.png'
 import settings from '../assets/settings.png';
@@ -44,7 +42,7 @@ export const socialLinks = [
 
   { id: 'dc', icon: <BsDiscord />, url: "https://discord.gg/5T9gTvMgR7" },
   { id: 'tw', icon: <BsTwitter />, url: "https://twitter.com/ziarat_info" },
-  { id: 'linIn', icon: <BsLinkedin />, url: "https://www.linkedin.com/company/ziaratofficial/" },
+  { id: 'linIn', icon: <FaLinkedinIn />, url: "https://www.linkedin.com/company/ziaratofficial/" },
 ];
 
 
@@ -99,99 +97,83 @@ export const faqData: AccordionItem[] = [
   },
 ];
 
-export const footerLinks = [{
-  title: "Lorem Ipsum",
-  links: [
-    {
-      name: "Content",
-      link: "https://www.hoobank.com/content/",
-    },
-    {
-      name: "How it Works",
-      link: "https://www.hoobank.com/how-it-works/",
-    },
-    {
-      name: "Create",
-      link: "https://www.hoobank.com/create/",
-    },
-    {
-      name: "Explore",
-      link: "https://www.hoobank.com/explore/",
-    },
-    {
-      name: "Terms & Services",
-      link: "https://www.hoobank.com/terms-and-services/",
-    },
-  ],
+export const footerLinks = [
+  {
+    title: "Company",
+    links: [
+      {
+        name: "About",
+        link: "https://www.hoobank.com/content/",
+      },
+      {
+        name: "Terms of",
+        link: "https://www.hoobank.com/how-it-works/",
+      },
+      {
+        name: "Privacy",
+        link: "https://www.hoobank.com/create/",
+      },
+      {
+        name: "How it",
+        link: "https://www.hoobank.com/explore/",
+      },
+      {
+        name: "Cotact Us",
+        link: "https://www.hoobank.com/terms-and-services/",
+      },
+    ],
+  },
+  {
+    title: "Get Help",
+    links: [
+      {
+        name: "Support",
+        link: "https://www.hoobank.com/content/",
+      },
+      {
+        name: "24h",
+        link: "https://www.hoobank.com/how-it-works/",
+      },
+      {
+        name: "Quick",
+        link: "https://www.hoobank.com/create/",
+      },
+    ],
 
-},
-{
-  title: "Lorem Ipsum",
-  links: [
-    {
-      name: "Content",
-      link: "https://www.hoobank.com/content/",
-    },
-    {
-      name: "How it Works",
-      link: "https://www.hoobank.com/how-it-works/",
-    },
-    {
-      name: "Create",
-      link: "https://www.hoobank.com/create/",
-    },
-    {
-      name: "Explore",
-      link: "https://www.hoobank.com/explore/",
-    },
-    {
-      name: "Terms & Services",
-      link: "https://www.hoobank.com/terms-and-services/",
-    },
-  ],
+  },
+  {
+    title: "Support",
+    links: [
+      {
+        name: "FA",
+        link: "https://www.hoobank.com/content/",
+      },
+      {
+        name: "Policy",
+        link: "https://www.hoobank.com/how-it-works/",
+      },
+      {
+        name: "Busines",
+        link: "https://www.hoobank.com/how-it-works/",
+      },
 
-},
-{
-  title: "Lorem Ipsum",
-  links: [
-    {
-      name: "Content",
-      link: "https://www.hoobank.com/content/",
-    },
-    {
-      name: "How it Works",
-      link: "https://www.hoobank.com/how-it-works/",
-    },
+    ],
 
-  ],
+  },
+  {
+    title: "Contact",
+    links: [
+      {
+        name: "WhatsApp",
+        link: "https://www.hoobank.com/content/",
+      },
+      {
+        name: "Support 24",
+        link: "https://www.hoobank.com/how-it-works/",
+      },
+    ],
 
-},
-{
-  title: "Lorem Ipsum",
-  links: [
-    {
-      name: "Content",
-      link: "https://www.hoobank.com/content/",
-    },
-    {
-      name: "How it Works",
-      link: "https://www.hoobank.com/how-it-works/",
-    },
-    {
-      name: "Create",
-      link: "https://www.hoobank.com/create/",
-    },
-    {
-      name: "Explore",
-      link: "https://www.hoobank.com/explore/",
-    },
-    {
-      name: "Terms & Services",
-      link: "https://www.hoobank.com/terms-and-services/",
-    },
-  ],
-
-},
+  },
 ]
 
 export const roadmaps = [

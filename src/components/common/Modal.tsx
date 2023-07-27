@@ -63,7 +63,7 @@ const ContactModal: React.FC<ModalProps> = ({ isOpen, handleOpen, heading, showC
                     </DialogBody>
                 ) : (
                     <DialogBody className="flex flex-col justify-center items-center" >
-                        <Typography variant="h5" className=" text-white font-bold bg-borderDark p-2 text-center rounded-md border border-solid border-borderDark">
+                        <Typography variant="h5" className=" text-white font-bold bg-faq-gradient p-2  text-center rounded-md ">
                             {`Thank you! Your data has been submitted`}
                         </Typography>
                     </DialogBody>

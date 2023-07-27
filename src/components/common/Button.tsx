@@ -8,12 +8,13 @@ interface ButtonProps {
     onClick?: () => void;
     icon?: ReactNode;
     fullWidth?: boolean;
+    hasBg?: boolean;
 }
 
-const Button: React.FC<ButtonProps> = ({ text, hasStroke, hasLink, onClick, icon, fullWidth }) => {
+const Button: React.FC<ButtonProps> = ({ text, hasStroke, hasLink, onClick, icon, fullWidth, hasBg }) => {
 
     const buttonStyles = `${fullWidth ? 'w-full' : 'w-[172px]'}  h-[46px] font-poppins flex justify-center cursor-pointer items-center text-grayColor 
-    bg-btn_primary duration-70 ${hasStroke ? `border-gradient border-gradient-purple button-text-gradient` : 'purple-shadow'
+    ${hasBg && 'bg-faq-gradient'} duration-70 ${hasStroke ? `border-gradient border-gradient-purple button-text-gradient` : 'purple-shadow'
         }`;
 
     return hasLink ? (
@@ -23,7 +24,7 @@ const Button: React.FC<ButtonProps> = ({ text, hasStroke, hasLink, onClick, icon
         </a>
     ) : (
         <button className={buttonStyles} onClick={onClick}>
-            {icon && <span className="mr-2">{icon}</span>}
+            {icon && <span className={`mr-2 ${hasBg && 'text-white'}`}>{icon}</span>}
             {text}
         </button>
     );
