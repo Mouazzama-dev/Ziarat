@@ -99,80 +99,24 @@ export const faqData: AccordionItem[] = [
 
 export const footerLinks = [
   {
-    title: "Company",
-    links: [
-      {
-        name: "About",
-        link: "https://www.hoobank.com/content/",
-      },
-      {
-        name: "Terms of",
-        link: "https://www.hoobank.com/how-it-works/",
-      },
-      {
-        name: "Privacy",
-        link: "https://www.hoobank.com/create/",
-      },
-      {
-        name: "How it",
-        link: "https://www.hoobank.com/explore/",
-      },
-      {
-        name: "Cotact Us",
-        link: "https://www.hoobank.com/terms-and-services/",
-      },
-    ],
+    id: 1,
+    name: "Terms & Conditions",
+    link: "/Users/syeddanyalhassan/ziarat3/Untitled/src/assets/Terms and Conditions.docx",
   },
   {
-    title: "Get Help",
-    links: [
-      {
-        name: "Support",
-        link: "https://www.hoobank.com/content/",
-      },
-      {
-        name: "24h",
-        link: "https://www.hoobank.com/how-it-works/",
-      },
-      {
-        name: "Quick",
-        link: "https://www.hoobank.com/create/",
-      },
-    ],
-
+    id: 2,
+    name: "Privacy Policy",
+    link: "https://www.hoobank.com/content/",
   },
   {
-    title: "Support",
-    links: [
-      {
-        name: "FA",
-        link: "https://www.hoobank.com/content/",
-      },
-      {
-        name: "Policy",
-        link: "https://www.hoobank.com/how-it-works/",
-      },
-      {
-        name: "Busines",
-        link: "https://www.hoobank.com/how-it-works/",
-      },
-
-    ],
-
+    id: 3,
+    name: "Legal Disclaimer",
+    link: "https://www.hoobank.com/content/",
   },
   {
-    title: "Contact",
-    links: [
-      {
-        name: "WhatsApp",
-        link: "https://www.hoobank.com/content/",
-      },
-      {
-        name: "Support 24",
-        link: "https://www.hoobank.com/how-it-works/",
-      },
-    ],
-
+    id: 4,
+    name: "Cookie Policy",
+    link: "https://www.hoobank.com/content/",
   },
 ]
 

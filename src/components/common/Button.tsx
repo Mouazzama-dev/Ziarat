@@ -2,7 +2,7 @@ import React, { ReactNode } from 'react'
 import { socialLinks } from '../../constants/constants';
 
 interface ButtonProps {
-    text: string;
+    text?: string;
     hasStroke?: boolean;
     hasLink?: boolean;
     onClick?: () => void;
@@ -14,7 +14,7 @@ interface ButtonProps {
 const Button: React.FC<ButtonProps> = ({ text, hasStroke, hasLink, onClick, icon, fullWidth, hasBg }) => {
 
     const buttonStyles = `${fullWidth ? 'w-full' : 'w-[172px]'}  h-[46px] font-poppins flex justify-center cursor-pointer items-center text-grayColor 
-    ${hasBg && 'bg-faq-gradient'} duration-70 ${hasStroke ? `border-gradient border-gradient-purple button-text-gradient` : 'purple-shadow'
+    ${hasBg && 'bg-faq-gradient'} duration-70 ${!hasStroke && !hasBg ? 'purple-shadow' : 'border-gradient border-gradient-purple button-text-gradient'
         }`;
 
     return hasLink ? (

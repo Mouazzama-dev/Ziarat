@@ -7,6 +7,11 @@ import { BsArrowUpRight } from 'react-icons/bs';
 
 
 const CTA = () => {
+
+    const handleClick = () => {
+        console.log('send email')
+    }
+
     return (
         <section className={`${styles.flexCenter} ${styles.marginY} ${styles.padding} sm:flex-row flex-col bg-black-gradient-2 relative box-shadow`}>
 
@@ -25,7 +30,7 @@ const CTA = () => {
             {/* ====> input email <==== */}
             <div className={`${styles.flexCenter} sm:ml-10 lg:w-1/2 ml-0 sm:mt-0 mt-10 `}>
                 <input className='bg-[#aeaeae7a] w-full px-4 py-3 focus:outline-none focus:bg-[#aeaeae7a] text-white' type="email" name="email" id="email" placeholder='Email' />
-                <Button text={''} icon={<BsArrowUpRight />} hasBg />
+                <Button icon={<BsArrowUpRight />} hasBg onClick={handleClick} />
             </div>
 
             <div className='absolute -bottom-40 -right-20 animate-bounce hidden lg:block'>
