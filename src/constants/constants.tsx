@@ -33,7 +33,7 @@ export const navLinks = [
     title: "When",
   },
   {
-    id: `https://forms.gle/YBsekvs3hjWjzu6J7`,
+    id: 'https://forms.gle/YBsekvs3hjWjzu6J7',
     title: "Hiring",
   },
 ];
@@ -56,12 +56,12 @@ export const features = [
 
 export const partnershipData = [
   {
-    id: 'p1', icon: <FaRegHandshake className="text-borderDark w-full h-full" />, title: 'Partnership',
+    id: 'p1', title: 'Partnership',
     description: 'If you  are building on Ethereum and looking for the scalable platform to run on or making tools or dApps.',
     buttonText: 'Contact the Team'
   },
   {
-    id: 'p2', icon: <IoIosPeople className="text-borderDark w-full h-full" />, title: 'Customers',
+    id: 'p2', title: 'Customers',
     description: 'If you are interested in using the protocol and participating in its life.',
     buttonText: 'Notify Me'
   },
@@ -101,22 +101,22 @@ export const footerLinks = [
   {
     id: 1,
     name: "Terms & Conditions",
-    link: "/Users/syeddanyalhassan/ziarat3/Untitled/src/assets/Terms and Conditions.docx",
+    link: "https://docs.google.com/document/d/1fJZF2PUqSx2v_ZCwLtyXNBm9XrnFWeF0/view",
   },
   {
     id: 2,
     name: "Privacy Policy",
-    link: "https://www.hoobank.com/content/",
+    link: "https://docs.google.com/document/d/16FGMZX5IitmEbs_9WSQ6LNTZ_oUndDcK/view",
   },
   {
     id: 3,
     name: "Legal Disclaimer",
-    link: "https://www.hoobank.com/content/",
+    link: "https://drive.google.com/file/d/1BILK5RYozLmAFKxMfWop3kDf2TsAIKB5/view",
   },
   {
     id: 4,
     name: "Cookie Policy",
-    link: "https://www.hoobank.com/content/",
+    link: "https://docs.google.com/document/d/1FSHj5RcvNqa9jgM5RGu3mUZe4JEfj8oA/view",
   },
 ]
 

@@ -16,7 +16,7 @@ const Footer = () => (
             <div className="lg:col-span-6 col-start-1 col-end-7 h-[72.14px]">
                 <ul className="flex lg:flex-row  lg:h-full justify-between items-center">
                     {footerLinks.map(({ id, name, link }) => (
-                        <li key={id} className='text-footerColor flex justify-center items-center lg:h-full ' >
+                        <li key={id} className='text-footerColor hover:text-dimWhite transition duration-100 flex justify-center items-center lg:h-full' >
                             <a href={link} target='_blank'>{name}</a>
                         </li>
                     ))}

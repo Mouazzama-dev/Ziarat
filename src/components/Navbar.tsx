@@ -7,7 +7,7 @@ import logo from '../assets/logo.webp'
 import menu from '../assets/menu.svg';
 import close from '../assets/close.svg';
 
-import { navLinks, socialLinks } from '../constants/constants'
+import { navLinks } from '../constants/constants'
 import styles from '../constants/style'
 const Navbar: React.FC = () => {
     const [toggle, setToggle] = useState<boolean>(false);
@@ -28,7 +28,7 @@ const Navbar: React.FC = () => {
                         <li
                             key={nav.id}
                         >
-                            <a className={' text-navColor capitalize '} href={idx === 5 ? `${nav.id}` : `#${nav.id}`} target={idx === 5 ? '_blank' : ''}>
+                            <a className={'text-navColor capitalize hover:text-dimWhite transition duration-100'} href={idx === 5 ? `${nav.id}` : `#${nav.id}`} target={idx === 5 ? '_blank' : ''}>
                                 {nav.title}
                             </a>
                         </li>

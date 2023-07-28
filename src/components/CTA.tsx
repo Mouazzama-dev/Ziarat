@@ -1,15 +1,28 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styles from '../constants/style'
 import Button from './common/Button'
 import ring from '../assets/ring5.png';
 import bowl from '../assets/bowl.png'
 import { BsArrowUpRight } from 'react-icons/bs';
+import { db } from '../config/firebase';
+import { addDoc, collection } from 'firebase/firestore';
 
 
 const CTA = () => {
+    const [email, setEmail] = useState<string>('')
+    const [emailSaved, setEmailSaved] = useState<boolean>(false)
 
-    const handleClick = () => {
-        console.log('send email')
+    const userCollectionRef = collection(db, 'userEmails')
+
+    const onSubmit = async () => {
+        try {
+            const submitted = await addDoc(userCollectionRef, { email })
+            if (submitted) {
+                setEmailSaved(true)
+            }
+        } catch (error) {
+            console.error(error)
+        }
     }
 
     return (
@@ -27,11 +40,20 @@ const CTA = () => {
 
             </div>
 
-            {/* ====> input email <==== */}
-            <div className={`${styles.flexCenter} sm:ml-10 lg:w-1/2 ml-0 sm:mt-0 mt-10 `}>
-                <input className='bg-[#aeaeae7a] w-full px-4 py-3 focus:outline-none focus:bg-[#aeaeae7a] text-white' type="email" name="email" id="email" placeholder='Email' />
-                <Button icon={<BsArrowUpRight />} hasBg onClick={handleClick} />
-            </div>
+            {emailSaved ? (
+                <div className={`${styles.flexCenter} sm:ml-10 lg:w-1/2 ml-0 sm:mt-0 mt-10 `}>
+                    <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
+                        YOUR EMAIL IS ADDED TO THE COMMUNITY LIST!
+                    </p>
+                </div>
+
+            ) : (
+                <div className={`${styles.flexCenter} sm:ml-10 lg:w-1/2 ml-0 sm:mt-0 mt-10 `}>
+                    <input className='bg-[#aeaeae7a] w-full px-4 py-3 focus:outline-none focus:bg-[#aeaeae7a] text-white' type="email" name="email" placeholder='Email' onChange={(e) => setEmail(e.target.value)} value={email} />
+                    <Button icon={<BsArrowUpRight />} hasBg onClick={onSubmit} />
+                </div>
+            )}
+
 
             <div className='absolute -bottom-40 -right-20 animate-bounce hidden lg:block'>
                 <img src={bowl} alt="floating bowl" />
