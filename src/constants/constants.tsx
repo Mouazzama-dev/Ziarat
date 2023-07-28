@@ -1,6 +1,5 @@
 import { BsTwitter, BsDiscord } from "react-icons/bs";
-import { IoIosPeople } from 'react-icons/io'
-import { FaLinkedinIn, FaRegHandshake } from 'react-icons/fa'
+import { FaLinkedinIn } from 'react-icons/fa'
 
 import magnifying from '../assets/magnified.png'
 import settings from '../assets/settings.png';
