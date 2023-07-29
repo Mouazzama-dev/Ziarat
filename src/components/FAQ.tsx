@@ -2,7 +2,7 @@ import React from 'react'
 import styles from '../constants/style'
 import Accordian from './common/Accordian'
 import { faqData } from '../constants/constants'
-import towers from '../assets/towers.png'
+import towers from '../assets/towers.webp'
 import ring1 from '../assets/ring1.png'
 import ring2 from '../assets/ring2.png';
 
@@ -14,11 +14,11 @@ const FAQ: React.FC = () => {
 
       {/*====> animated ring <==== */}
       <div className='absolute  w-32 lg:-left-20 -left-10 top-0 animate-bounce'>
-        <img src={ring1} />
+        <img src={ring1} alt='bouncing ring' loading='lazy' />
       </div>
       {/*=====> Image Part <=====  */}
       <div className='lg:w-1/2'>
-        <img src={towers} className='object-contain' />
+        <img src={towers} alt='towers' className='object-contain' loading='lazy' />
       </div>
 
       {/* ====> Accordian <===== */}
@@ -35,7 +35,7 @@ const FAQ: React.FC = () => {
       </div>
 
       <div className='absolute w-32  lg:-right-20 -right-10  -bottom-20 animate-bounce'>
-        <img src={ring2} />
+        <img src={ring2} alt='bouncing ring' loading='lazy' />
       </div>
 
 

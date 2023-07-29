@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from '../constants/style'
-import cube from '../assets/cube.png'
+import cube from '../assets/cube.webp'
 import fullRing from '../assets/fullRing.png';
 import bowl from '../assets/bowl2.png';
 
@@ -19,10 +19,10 @@ const Dynamic: React.FC = () => {
                 <img src={cube} alt="cube" />
 
                 <div className='absolute  hidden lg:block top-0 animate-bounce'>
-                    <img src={fullRing} />
+                    <img src={fullRing} alt='bouncing ring' />
                 </div>
                 <div className='absolute  hidden lg:block -right-48 bottom-0 animate-bounce' >
-                    <img src={bowl} alt="cube" />
+                    <img src={bowl} alt="bowl" />
                 </div>
             </div>
         </section >
