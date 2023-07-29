@@ -16,13 +16,13 @@ const Dynamic: React.FC = () => {
 
             {/* ====> Image <==== */}
             <div className='relative'>
-                <img src={cube} alt="cube" />
+                <img src={cube} alt="cube" loading='lazy' />
 
                 <div className='absolute  hidden lg:block top-0 animate-bounce'>
-                    <img src={fullRing} alt='bouncing ring' />
+                    <img src={fullRing} alt='bouncing ring' loading='lazy' />
                 </div>
                 <div className='absolute  hidden lg:block -right-48 bottom-0 animate-bounce' >
-                    <img src={bowl} alt="bowl" />
+                    <img src={bowl} alt="bowl" loading='lazy' />
                 </div>
             </div>
         </section >
