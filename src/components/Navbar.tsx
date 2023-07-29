@@ -28,7 +28,7 @@ const Navbar: React.FC = () => {
                         <li
                             key={nav.id}
                         >
-                            <a className={'text-navColor capitalize hover:text-dimWhite transition duration-100'} href={idx === 5 ? `${nav.id}` : `#${nav.id}`} target={idx === 5 ? '_blank' : ''}>
+                            <a className={'text-navColor capitalize hover:text-dimWhite transition duration-100'} href={idx === 5 ? nav.id : `#${nav.id}`} target={idx === 5 ? '_blank' : ''}>
                                 {nav.title}
                             </a>
                         </li>
