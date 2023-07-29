@@ -4,7 +4,7 @@ import cube from '../assets/cube.png'
 import fullRing from '../assets/fullRing.png';
 import bowl from '../assets/bowl2.png';
 
-const Dynamic = () => {
+const Dynamic: React.FC = () => {
     return (
         <section id='partnership' className={`flex flex-col justify-center items-center ${styles.paddingX} ${styles.paddingY}`}>
             {/* ====> Heading <==== */}

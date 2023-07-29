@@ -1,7 +1,6 @@
 import React, { Fragment, useState } from 'react'
 import { Accordion, AccordionBody, AccordionHeader } from '@material-tailwind/react';
 import Icon from './Icon';
-import styles from '../../constants/style';
 
 
 

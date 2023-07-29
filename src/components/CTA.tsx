@@ -8,7 +8,7 @@ import { db } from '../config/firebase';
 import { addDoc, collection } from 'firebase/firestore';
 
 
-const CTA = () => {
+const CTA: React.FC = () => {
     const [email, setEmail] = useState<string>('')
     const [emailSaved, setEmailSaved] = useState<boolean>(false)
 
