@@ -39,9 +39,9 @@ export const navLinks = [
 
 export const socialLinks = [
 
-  { id: 'dc', icon: <BsDiscord />, url: "https://discord.gg/5T9gTvMgR7" },
-  { id: 'tw', icon: <BsTwitter />, url: "https://twitter.com/ziarat_info" },
-  { id: 'linIn', icon: <FaLinkedinIn />, url: "https://www.linkedin.com/company/ziaratofficial/" },
+  { id: 'discord', icon: <BsDiscord />, url: "https://discord.gg/5T9gTvMgR7" },
+  { id: 'twitter', icon: <BsTwitter />, url: "https://twitter.com/ziarat_info" },
+  { id: 'linkedIn', icon: <FaLinkedinIn />, url: "https://www.linkedin.com/company/ziaratofficial/" },
 ];
 
 

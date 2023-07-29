@@ -27,7 +27,7 @@ const Footer = () => (
                 <ul className="flex  gap-4 b">
                     {socialLinks.map(({ id, url, icon }) => (
                         <li key={id} className='text-white transition w-[40px] cursor-pointer rounded-md shadow-md h-[40px] bg-black-gradient flex justify-center items-center'>
-                            <a href={url} target='_blank'>{icon}</a>
+                            <a href={url} target='_blank' aria-label={id}>{icon}</a>
                         </li>
                     ))}
                 </ul>
