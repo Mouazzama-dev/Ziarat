@@ -13,12 +13,12 @@ const FAQ: React.FC = () => {
 
 
       {/*====> animated ring <==== */}
-      <div className='absolute  w-32 lg:-left-20 -left-10 top-0 animate-bounce'>
-        <img src={ring1} alt='bouncing ring' loading='lazy' />
+      <div className='absolute w-32 lg:-left-20 -left-10 top-0 animate-bounce'>
+        <img src={ring1} alt='bouncing ring' />
       </div>
       {/*=====> Image Part <=====  */}
       <div className='lg:w-1/2'>
-        <img src={towers} alt='towers' className='object-contain' loading='lazy' />
+        <img src={towers} alt='towers' className='object-contain' />
       </div>
 
       {/* ====> Accordian <===== */}
@@ -35,7 +35,7 @@ const FAQ: React.FC = () => {
       </div>
 
       <div className='absolute w-32  lg:-right-20 -right-10  -bottom-20 animate-bounce'>
-        <img src={ring2} alt='bouncing ring' loading='lazy' />
+        <img src={ring2} alt='bouncing ring' />
       </div>
 
 

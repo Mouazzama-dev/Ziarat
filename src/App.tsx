@@ -16,19 +16,19 @@ function App() {
   return (
     <>
       <div className="bg-primary w-full h-full overflow-hidden">
-        <div className={`${styles.paddingX}  ${styles.flexCenter} sticky top-0 z-10 `}>
+        <div className={`${styles.flexCenter}`}>
           <div className={`${styles.boxWidth} ${styles.paddingX} `}>
             <Navbar />
           </div>
         </div>
-        <div className={`${styles.paddingX} ${styles.flexStart}`}>
+        <div className={`${styles.flexStart}`}>
           <div className={`${styles.boxWidth}`}>
             <Hero />
           </div>
         </div>
 
 
-        <div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
+        <div className={`${styles.paddingX} ${styles.flexStart}`}>
           <div className={`${styles.boxWidth}`}>
             <CTA />
             <Business />

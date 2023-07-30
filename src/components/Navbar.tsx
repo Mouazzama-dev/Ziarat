@@ -24,11 +24,11 @@ const Navbar: React.FC = () => {
             {/*======> Navlinks div <======  */}
             <div className='sm:flex hidden items-center col-span-4 font-poppins'>
                 <ul className='flex justify-around w-full items-center text-white cursor-pointer'>
-                    {navLinks.map((nav, idx) => (
+                    {navLinks.map((nav) => (
                         <li
                             key={nav.id}
                         >
-                            <a className={'text-navColor capitalize hover:text-dimWhite transition duration-100'} href={idx === 5 ? nav.id : `#${nav.id}`} target={idx === 5 ? '_blank' : ''}>
+                            <a className={'text-navColor capitalize hover:text-dimWhite transition duration-100'} href={nav.hasForm ? nav.id : `#${nav.id}`} target={nav.hasForm ? '_blank' : ''}>
                                 {nav.title}
                             </a>
                         </li>
@@ -50,12 +50,12 @@ const Navbar: React.FC = () => {
                 toggle && (
                     <div className='sm:hidden sidebar items-center col-span-5 font-poppins grid absolute bg-primary top-10 right-0 left-0 py-3'>
                         <ul className='flex flex-col justify-between items-center h-80 text-white cursor-pointer text-xl  '>
-                            {navLinks.map((nav, idx) => (
+                            {navLinks.map((nav) => (
                                 <li
                                     key={nav.id}
                                     onClick={() => setToggle((prev) => !prev)}
                                 >
-                                    <a className={idx === 0 ? 'capitalize text-white' : 'capitalize text-dimWhite'} href={`#${nav.id}`}>
+                                    <a className={'capitalize text-dimWhite'} href={nav.hasForm ? nav.id : `#${nav.id}`} target={nav.hasForm ? '_blank' : ''}>
                                         {nav.title}
                                     </a>
                                 </li>

@@ -34,6 +34,7 @@ export const navLinks = [
   {
     id: 'https://forms.gle/YBsekvs3hjWjzu6J7',
     title: "Hiring",
+    hasForm: true
   },
 ];
 
