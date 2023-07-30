@@ -36,7 +36,7 @@ const CTA: React.FC = () => {
                 <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
                     ACHIEVE MORE
                 </p>
-                <h2 className={'flex-1 font-poppins font-semibold text-white text-[32px]'}>Join our community of faith{''} <br /> centered blockchain {''} <br />enthusiasts</h2>
+                <h2 className={'flex-1 font-poppins font-semibold text-white lg:text-[32px] md:text-[32px] text-[20px]'}>Join our community of faith{''} <br /> centered blockchain {''} <br />enthusiasts</h2>
 
             </div>
 

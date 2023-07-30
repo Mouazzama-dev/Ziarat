@@ -13,7 +13,7 @@ const FAQ: React.FC = () => {
 
 
       {/*====> animated ring <==== */}
-      <div className='absolute w-32 lg:-left-20 -left-10 top-0 animate-bounce'>
+      <div className='absolute w-32 -left-20 top-0 animate-bounce hidden lg:block'>
         <img src={ring1} alt='bouncing ring' />
       </div>
       {/*=====> Image Part <=====  */}
@@ -34,7 +34,7 @@ const FAQ: React.FC = () => {
         ))}
       </div>
 
-      <div className='absolute w-32  lg:-right-20 -right-10  -bottom-20 animate-bounce'>
+      <div className='absolute w-32  lg:-right-20 -right-10  -bottom-20 animate-bounce hidden lg:block'>
         <img src={ring2} alt='bouncing ring' />
       </div>
 
