@@ -16,7 +16,7 @@ const Footer = () => (
                 <address className="not-italic grid grid-cols-12 lg:text-sm text-xs gap-2">
                     <div className="flex gap-2 items-center col-start-2 col-end-12  ">
                         <BsFillTelephoneFill className="text-dimWhite" />
-                        <a className="text-footerColor hover:text-dimWhite" href="tel:+13256448213">+1 (325) 644-8213</a><br />
+                        <a className="text-footerColor hover:text-dimWhite" href="tel:+15759362634">+1 (575) 936-2634</a><br />
                     </div>
 
                     <div className="flex gap-2 col-start-2 col-end-12  ">
