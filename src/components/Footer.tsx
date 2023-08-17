@@ -1,8 +1,8 @@
 import styles from "../constants/style";
 import logo from "../assets/logo.webp";
 import { footerLinks, socialLinks } from "../constants/constants";
-import { BsFillTelephoneFill } from "react-icons/bs";
-import { FaLocationDot } from "react-icons/fa6";
+// import { BsFillTelephoneFill } from "react-icons/bs";
+// import { FaLocationDot } from "react-icons/fa6";
 
 const Footer = () => (
     <section className={`${styles.flexCenter} ${styles.paddingY} flex-col`}>
@@ -13,7 +13,7 @@ const Footer = () => (
                     alt="Ziarat Logo"
                     className="w-[200px] h-[72.14px] object-cover"
                 />
-                <address className="not-italic grid grid-cols-12 lg:text-sm text-xs gap-2">
+                {/* <address className="not-italic grid grid-cols-12 lg:text-sm text-xs gap-2">
                     <div className="flex gap-2 items-center col-start-2 col-end-12  ">
                         <BsFillTelephoneFill className="text-dimWhite" />
                         <a className="text-footerColor hover:text-dimWhite" href="tel:+15759362634">+1 (575) 936-2634</a><br />
@@ -25,7 +25,7 @@ const Footer = () => (
                             ALBUQUERQUE , NM 87107
                         </address>
                     </div>
-                </address>
+                </address> */}
             </div>
 
             <div className="lg:col-span-6 col-start-1 col-end-7 h-[72.14px] ">
