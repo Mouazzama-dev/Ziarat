@@ -11,14 +11,17 @@ const Navbar: React.FC = () => {
   const [toggle, setToggle] = useState<boolean>(false);
 
   return (
-    <nav className={`${styles.boxWidth} grid grid-cols-5 bg-primary `}>
+    <nav className={`${styles.boxWidth} grid grid-cols-5 bg-primary py-5 `}>
       {/* =====> Logo div <====== */}
-      <div className="grid items-center justify-start sm:w-[100px] ">
+      <div className="flex items-center justify-start sm:w-14">
         <img
           src={logo}
           alt="Ziarat"
           className=" w-full h-full object-contain cursor-pointer"
         />
+        <span className=" text-white/90 tracking-wide text-lg ml-3">
+          Ziarat
+        </span>
       </div>
 
       {/*======> Navlinks div <======  */}
@@ -53,7 +56,7 @@ const Navbar: React.FC = () => {
 
       {/* Navlinks  Mobile div */}
       {toggle && (
-        <div className="sm:hidden sidebar items-center col-span-5 font-poppins grid absolute bg-primary   top-14 right-0 left-0 py-3">
+        <div className="sm:hidden sidebar items-center col-span-5 font-poppins grid absolute bg-primary  top-24 right-0 left-0 py-3">
           <ul className="flex flex-col justify-between items-center h-80 text-white cursor-pointer text-xl  ">
             {navLinks.map((nav) => (
               <li key={nav.id} onClick={() => setToggle((prev) => !prev)}>
