@@ -22,10 +22,6 @@ const Navbar: React.FC = () => {
           alt="Ziarat"
           className=" object-contain cursor-pointer"
         />
-
-        <div>
-          <span className=" text-white/90   tracking-wide ">Ziarat</span>
-        </div>
       </div>
 
       {/*======> Navlinks div <======  */}

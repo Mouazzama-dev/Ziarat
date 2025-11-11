@@ -1,6 +1,6 @@
-import styles from "../constants/style";
 import logo from "../assets/logo.webp";
 import { footerLinks, socialLinks } from "../constants/constants";
+import styles from "../constants/style";
 // import { BsFillTelephoneFill } from "react-icons/bs";
 // import { FaLocationDot } from "react-icons/fa6";
 
@@ -15,7 +15,6 @@ const Footer = () => (
           alt="Ziarat Logo"
           className="w-auto h-[72.14px] object-contain"
         />
-        <span className=" text-white/90 tracking-wide ml-3">Ziarat</span>
         {/* <address className="not-italic grid grid-cols-12 lg:text-sm text-xs gap-2">
                     <div className="flex gap-2 items-center col-start-2 col-end-12  ">
                         <BsFillTelephoneFill className="text-dimWhite" />
