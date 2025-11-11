@@ -2,8 +2,8 @@ import React, { useState } from "react";
 
 import logo from "../assets/logo.webp";
 
-import menu from "../assets/menu.svg";
 import close from "../assets/close.svg";
+import menu from "../assets/menu.svg";
 
 import { navLinks } from "../constants/constants";
 import styles from "../constants/style";
@@ -13,15 +13,19 @@ const Navbar: React.FC = () => {
   return (
     <nav className={`${styles.boxWidth} grid grid-cols-5 bg-primary py-5 `}>
       {/* =====> Logo div <====== */}
-      <div className="flex items-center justify-start sm:w-14">
+      <div
+        className="flex  sm:w-24  items-center justify-start 
+       "
+      >
         <img
           src={logo}
           alt="Ziarat"
-          className=" w-full h-full object-contain cursor-pointer"
+          className=" object-contain cursor-pointer"
         />
-        <span className=" text-white/90 tracking-wide text-lg ml-3">
-          Ziarat
-        </span>
+
+        <div>
+          <span className=" text-white/90   tracking-wide ">Ziarat</span>
+        </div>
       </div>
 
       {/*======> Navlinks div <======  */}
